@@ -5,26 +5,123 @@
  */
 
 /* You can override the default Infima variables here. */
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/font/SpaceGrotesk-Bold.ttf") format("truetype"),
+    url("/font/SpaceGrotesk-Light.ttf") format("truetype"),
+    url("/font/SpaceGrotesk-Medium.ttf") format("truetype"),
+    url("/font/SpaceGrotesk-Regular.ttf") format("truetype"),
+    url("/font/SpaceGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("/font/IBMPlexMono-Bold.ttf") format("truetype"),
+    url("/font/IBMPlexMono-BoldItalic.ttf") format("truetype"),
+    url("/font/IBMPlexMono-ExtraLight.ttf") format("truetype"),
+    url("/font/IBMPlexMono-ExtraLightItalic.ttf") format("truetype"),
+    url("/font/IBMPlexMono-Italic.ttf") format("truetype"),
+    url("/font/IBMPlexMono-Light.ttf") format("truetype"),
+    url("/font/IBMPlexMono-LightItalic.ttf") format("truetype"),
+    url("/font/IBMPlexMono-Medium.ttf") format("truetype"),
+    url("/font/IBMPlexMono-MediumItalic.ttf") format("truetype"),
+    url("/font/IBMPlexMono-Regular.ttf") format("truetype"),
+    url("/font/IBMPlexMono-SemiBold.ttf") format("truetype"),
+    url("/font/IBMPlexMono-Thin.ttf") format("truetype"),
+    url("/font/IBMPlexMono-ThinItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: var(--ifm-color-white);
+  --ifm-color-primary-dark: var(--ifm-color-white);
+  --ifm-color-primary-darker: var(--ifm-color-white);
+  --ifm-color-primary-darkest: var(--ifm-color-white);
+  --ifm-color-primary-light: var(--ifm-color-white);
+  --ifm-color-primary-lighter: var(--ifm-color-white);
+  --ifm-color-primary-lightest: var(--ifm-color-white);
+  --ifm-font-color-base: var(--ifm-color-black);
+  --ifm-heading-color: var(--ifm-color-black);
+  --ifm-background-color-rgb: 255, 255, 255;
+  --ifm-footer-background-color: var(--ifm-color-white);
+  --ifm-footer-link-hover-color: var(--ifm-footer-link-color);
+  --ifm-navbar-link-hover-color: var(--ifm-navbar-link-color);
   --ifm-code-font-size: 95%;
+  --ifm-hr-border-color: var(--ifm-color-gray-200);
+  --ifm-card-background-color: var(--ifm-color-gray-100);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: SpaceGrotesk;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+[data-theme="dark"] {
+  --ifm-color-dark: #1a1a11;
+  --ifm-color-primary: var(--ifm-color-dark);
+  --ifm-color-primary-dark: var(--ifm-color-dark);
+  --ifm-color-primary-darker: var(--ifm-color-dark);
+  --ifm-color-primary-darkest: var(--ifm-color-dark);
+  --ifm-color-primary-light: var(--ifm-color-dark);
+  --ifm-color-primary-lighter: var(--ifm-color-dark);
+  --ifm-color-primary-lightest: var(--ifm-color-dark);
+  --ifm-heading-color: var(--ifm-color-white);
+  --ifm-font-color-base: var(--ifm-color-white);
+  --ifm-background-color-rgb: 26, 26, 26;
+  --ifm-navbar-background-color: var(--ifm-color-dark);
+  --ifm-footer-background-color: var(--ifm-color-dark);
+  --ifm-footer-link-hover-color: var(--ifm-footer-link-color);
+  --ifm-navbar-link-hover-color: var(--ifm-navbar-link-color);
+  --ifm-hero-text-color: var(--ifm-color-white);
+  --ifm-hr-border-color: var(--ifm-color-gray-800);
+  --ifm-sidebar-border-color: var(--ifm-color-gray-800);
+  --ifm-card-background-color: var(--ifm-color-gray-900);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-font-family-base: SpaceGrotesk;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: var(--ifm-color-primary);
+  --ifm-hero-text-color: var(--ifm-color-black);
+}
+
+.hero__title,
+.hero__subtitle {
+  text-align: center;
+}
+
+[data-theme="dark"] .hero--primary {
+  --ifm-hero-text-color: var(--ifm-color-white);
+}
+
+.card-container {
+  gap: 1rem;
+  display: flex;
+  padding-bottom: 5rem;
+  justify-content: center;
+  background-color: var(--ifm-color-primary);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-sidebar-border-color);
+}
+
+.footer__link-item:hover,
+.navbar__link:hover,
+.navbar__link--active {
+  opacity: 0.5;
+}
+
+p.footer__description {
+  margin: 0;
+}
+
+.icon {
+  color: var(--ifm-font-color-base);
+}
+
+.dropdown__link--active,
+.dropdown__link--active:hover {
+  --ifm-dropdown-link-color: var(--ifm-font-color-base);
 }

@@ -1,0 +1,26 @@
+.footer {
+  --ifm-heading-margin-bottom: var(--ifm-spacing-vertical);
+  border-top: 1px solid var(--ifm-hr-border-color);
+}
+
+.footer .footer__items {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.footer__description_icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__logo h3 {
+  margin: 0;
+}
