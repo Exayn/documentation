@@ -26,7 +26,6 @@ const config: Config = {
       "classic",
       {
         docs: {
-          path: "./guides",
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -50,12 +49,12 @@ const config: Config = {
       },
       items: [
         {
-          to: "guides/",
+          to: "docs/guides/getting-started/",
           label: "Guides",
           position: "left",
         },
         {
-          to: "tutorials/",
+          to: "docs/tutorials/getting-started/",
           label: "Tutorials",
           position: "left",
         },
@@ -96,11 +95,11 @@ const config: Config = {
           items: [
             {
               label: "Guides",
-              to: "/guides/",
+              to: "docs/guides/getting-started/",
             },
             {
               label: "Tutorials",
-              to: "/tutorials/",
+              to: "docs/tutorials/getting-started/",
             },
           ],
         },
