@@ -42,14 +42,14 @@ const config: Config = {
     // Replace with your project's social card
     navbar: {
       hideOnScroll: true,
-      title: "EzeXchange-API",
+      title: "EzeXchange.API",
       logo: {
         alt: "ezexchange-logo",
         src: "img/logo.svg",
       },
       items: [
         {
-          to: "docs/guides/getting-started/",
+          to: "docs/guides/getting-started/what-is-ezexchange/",
           label: "Guides",
           position: "left",
         },
@@ -95,7 +95,7 @@ const config: Config = {
           items: [
             {
               label: "Guides",
-              to: "docs/guides/getting-started/",
+              to: "docs/guides/getting-started/what-is-ezexchange/",
             },
             {
               label: "Tutorials",

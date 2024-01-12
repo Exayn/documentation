@@ -53,7 +53,7 @@ function Footer() {
             <div className="col col--5 footer__col">
               <div className="margin-bottom--md footer__logo">
                 <img src="/img/logo.svg" alt="EzeXchange" width="75" />
-                <h3>EzeXchange-API</h3>
+                <h3>EzeXchange.API</h3>
               </div>
               <div className="margin-bottom--md">
                 <p className="footer__description">

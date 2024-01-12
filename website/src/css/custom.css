@@ -7,12 +7,36 @@
 /* You can override the default Infima variables here. */
 @font-face {
   font-family: "SpaceGrotesk";
-  src: url("/font/SpaceGrotesk-Bold.ttf") format("truetype"),
-    url("/font/SpaceGrotesk-Light.ttf") format("truetype"),
-    url("/font/SpaceGrotesk-Medium.ttf") format("truetype"),
-    url("/font/SpaceGrotesk-Regular.ttf") format("truetype"),
-    url("/font/SpaceGrotesk-SemiBold.ttf") format("truetype");
+  src: url("/font/SpaceGrotesk-Regular.ttf") format("truetype");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/font/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/font/SpaceGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/font/SpaceGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/font/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -44,15 +68,19 @@
   --ifm-color-primary-lighter: var(--ifm-color-white);
   --ifm-color-primary-lightest: var(--ifm-color-white);
   --ifm-font-color-base: var(--ifm-color-black);
+  --ifm-font-color-markdown-paragraph: var(--ifm-color-gray-800);
   --ifm-heading-color: var(--ifm-color-black);
   --ifm-background-color-rgb: 255, 255, 255;
   --ifm-footer-background-color: var(--ifm-color-white);
   --ifm-footer-link-hover-color: var(--ifm-footer-link-color);
   --ifm-navbar-link-hover-color: var(--ifm-navbar-link-color);
   --ifm-code-font-size: 95%;
+  --ifm-menu-color-active: var(--ifm-color-black);
+  --ifm-breadcrumb-color-active: var(--ifm-color-black);
   --ifm-hr-border-color: var(--ifm-color-gray-200);
   --ifm-card-background-color: var(--ifm-color-gray-100);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-link-color: rgb(0, 0, 212);
   --ifm-font-family-base: SpaceGrotesk;
 }
 
@@ -68,6 +96,7 @@
   --ifm-color-primary-lightest: var(--ifm-color-dark);
   --ifm-heading-color: var(--ifm-color-white);
   --ifm-font-color-base: var(--ifm-color-white);
+  --ifm-font-color-markdown-paragraph: var(--ifm-color-gray-300);
   --ifm-background-color-rgb: 26, 26, 26;
   --ifm-navbar-background-color: var(--ifm-color-dark);
   --ifm-footer-background-color: var(--ifm-color-dark);
@@ -77,6 +106,9 @@
   --ifm-hr-border-color: var(--ifm-color-gray-800);
   --ifm-sidebar-border-color: var(--ifm-color-gray-800);
   --ifm-card-background-color: var(--ifm-color-gray-900);
+  --ifm-menu-color-active: var(--ifm-color-white);
+  --ifm-breadcrumb-color-active: var(--ifm-color-white);
+  --ifm-link-color: rgb(58, 58, 255);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-font-family-base: SpaceGrotesk;
 }
@@ -124,4 +156,32 @@ p.footer__description {
 .dropdown__link--active,
 .dropdown__link--active:hover {
   --ifm-dropdown-link-color: var(--ifm-font-color-base);
+}
+
+a.table-of-contents__link--active,
+a.table-of-contents__link:hover {
+  color: var(--ifm-toc-link-color);
+  opacity: 0.5;
+}
+
+.markdown h1 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--ifm-hr-border-color);
+}
+
+.markdown h2 {
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid var(--ifm-hr-border-color);
+}
+
+.markdown p {
+  font-size: 15px;
+  color: var(--ifm-font-color-markdown-paragraph);
+}
+
+code,
+pre {
+  white-space: pre-wrap; /* For word wrapping */
 }

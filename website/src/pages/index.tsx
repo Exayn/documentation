@@ -8,7 +8,7 @@ const Cards = [
   {
     icon: faExpand,
     title: "Guides",
-    url: "docs/guides/getting-started",
+    url: "docs/guides/getting-started/what-is-ezexchange",
   },
   {
     icon: faWandMagic,
