@@ -49,7 +49,7 @@ curl -X POST 'https://api.ezexchange-api.com/v1/wallet/withdraw' \
 {
     "id": "60c9b4b0a9b3a0004a7f7b7f",
     "amount": 0.1,
-    "fee": 0.0001,
+    "fees": 0.0001, // Nullable
     "totalAmount": 0.1001,
     "asset": "ETH",
     "status": "completed",

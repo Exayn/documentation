@@ -18,13 +18,13 @@ This endpoint place a market order on the exchange used.
 
 ## Parameters
 
-| Name        | Type    | Mandatory | Description                                           |
-| :---------- | :------ | :-------- | :---------------------------------------------------- |
-| asset1      | String  | YES       | First asset of the symbol. ex : "BTC" of "BTCUSDT"    |
-| asset2      | String  | YES       | Second asset of the symbol. ex : "USDT" of "BTCUSDT"  |
-| side        | String  | YES       | Side of the order. "BUY" or "SELL"                    |
-| quantity    | Float64 | YES       | Quantity of the order. ex : 0.1                       |
-| quantity_in | String  | NO        | Quantity in which asset. "**asset1**" or "**asset2**" |
+| Name       | Type    | Mandatory | Description                                           |
+| :--------- | :------ | :-------- | :---------------------------------------------------- |
+| asset1     | String  | YES       | First asset of the symbol. ex : "BTC" of "BTCUSDT"    |
+| asset2     | String  | YES       | Second asset of the symbol. ex : "USDT" of "BTCUSDT"  |
+| side       | String  | YES       | Side of the order. "BUY" or "SELL"                    |
+| quantity   | Float64 | YES       | Quantity of the order. ex : 0.1                       |
+| quantityIn | String  | YES       | Quantity in which asset. "**asset1**" or "**asset2**" |
 
 ## Request Example
 
@@ -55,9 +55,9 @@ curl -X POST 'https://api.ezexchange-api.com/v1/order/market' \
   "side": "BUY",
   "quantity": 0.1,
   "quantityIn": "ETH",
-  "fee": 0.001, // Nullable
-  "fee_in": "ETH",
-  "open_at": 1623931200000,
-  "close_at": 1623931200000
+  "fees": 0.001, // Nullable
+  "feesIn": "ETH",
+  "openAt": 1623931200000,
+  "closeAt": 1623931200000
 }
 ```
