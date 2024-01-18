@@ -19,6 +19,7 @@ const sidebars: SidebarsConfig = {
       items: [
         "guides/getting-started/what-is-ezexchange",
         "guides/getting-started/why-ezexchange",
+        "guides/getting-started/general-information",
         "guides/getting-started/resources",
       ],
     },
