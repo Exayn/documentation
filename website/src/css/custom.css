@@ -40,25 +40,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "IBMPlexMono";
-  src: url("/font/IBMPlexMono-Bold.ttf") format("truetype"),
-    url("/font/IBMPlexMono-BoldItalic.ttf") format("truetype"),
-    url("/font/IBMPlexMono-ExtraLight.ttf") format("truetype"),
-    url("/font/IBMPlexMono-ExtraLightItalic.ttf") format("truetype"),
-    url("/font/IBMPlexMono-Italic.ttf") format("truetype"),
-    url("/font/IBMPlexMono-Light.ttf") format("truetype"),
-    url("/font/IBMPlexMono-LightItalic.ttf") format("truetype"),
-    url("/font/IBMPlexMono-Medium.ttf") format("truetype"),
-    url("/font/IBMPlexMono-MediumItalic.ttf") format("truetype"),
-    url("/font/IBMPlexMono-Regular.ttf") format("truetype"),
-    url("/font/IBMPlexMono-SemiBold.ttf") format("truetype"),
-    url("/font/IBMPlexMono-Thin.ttf") format("truetype"),
-    url("/font/IBMPlexMono-ThinItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 :root {
   --ifm-color-primary: var(--ifm-color-white);
   --ifm-color-primary-dark: var(--ifm-color-white);
@@ -85,7 +66,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
+:root[data-theme="dark"] {
   --ifm-color-dark: #1a1a1a;
   --ifm-color-primary: var(--ifm-color-dark);
   --ifm-color-primary-dark: var(--ifm-color-dark);

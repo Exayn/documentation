@@ -11,8 +11,8 @@ type CardLinkProps = {
 
 export default function CardLink(props: CardLinkProps) {
   return (
-    <div className="card">
-      <a href={props.url} rel="noreferrer">
+    <div className="card card-link">
+      <a href={props.url}>
         <div className="card-body">
           <FontAwesomeIcon icon={props.icon} className="icon card__icon" />
           <h3 className="card-title">{props.title}</h3>
