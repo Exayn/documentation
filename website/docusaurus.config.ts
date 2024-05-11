@@ -3,19 +3,19 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "EzeXchange",
-  tagline: "EzeXchange-API is an universal API for cryptocurrency exchanges",
+  title: "Exayn",
+  tagline: "Exayn is an universal API for cryptocurrency exchanges",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://ezexchange-api.com",
+  url: "https://exayn.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "EzeXchange-API", // Usually your GitHub org/user name.
+  organizationName: "Exayn", // Usually your GitHub org/user name.
   projectName: "documentation", // Usually your repo name.
 
   onBrokenLinks: "log",
@@ -29,7 +29,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/EzeXchange-API/documentation/",
+          editUrl: "https://github.com/Exayn/documentation/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -42,14 +42,14 @@ const config: Config = {
     // Replace with your project's social card
     navbar: {
       hideOnScroll: true,
-      title: "EzeXchange.API",
+      title: "Exayn",
       logo: {
-        alt: "ezexchange-logo",
+        alt: "exayn-logo",
         src: "img/logo.svg",
       },
       items: [
         {
-          to: "docs/guides/getting-started/what-is-ezexchange/",
+          to: "docs/guides/getting-started/what-is-exayn/",
           label: "Guides",
           position: "left",
         },
@@ -61,17 +61,17 @@ const config: Config = {
         {
           label: "Dashboard",
           position: "right",
-          to: "https://app.ezexchange-api.com",
+          to: "https://app.exayn.com",
         },
         {
           label: "Home",
           position: "right",
-          to: "https://ezexchange-api.com",
+          to: "https://exayn.com",
         },
         {
           label: "GitHub",
           position: "right",
-          href: "https://github.com/EzeXchange-API",
+          href: "https://github.com/Exayn",
         },
       ],
     },
@@ -82,11 +82,11 @@ const config: Config = {
           items: [
             {
               label: "Website",
-              to: "https://ezexchange-api.com",
+              to: "https://exayn.com",
             },
             {
               label: "Dashboard",
-              to: "https://app.ezexchange-api.com",
+              to: "https://app.exayn.com",
             },
           ],
         },
@@ -95,7 +95,7 @@ const config: Config = {
           items: [
             {
               label: "Guides",
-              to: "docs/guides/getting-started/what-is-ezexchange/",
+              to: "docs/guides/getting-started/what-is-exayn/",
             },
             {
               label: "Tutorials",
@@ -112,20 +112,20 @@ const config: Config = {
             },
             {
               label: "Twitter",
-              to: "https://twitter.com/EzeXchangeAPI",
+              to: "https://twitter.com/Exayn",
             },
             {
               label: "LinkedIn",
-              to: "https://www.linkedin.com/company/ezexchange-api",
+              to: "https://www.linkedin.com/company/exayn",
             },
             {
               label: "GitHub",
-              to: "https://github.com/EzeXchange-API",
+              to: "https://github.com/Exayn",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} EzeXchange-API.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Exayn.`,
     },
     prism: {
       theme: prismThemes.github,

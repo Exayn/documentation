@@ -17,8 +17,8 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       label: "Getting Started",
       items: [
-        "guides/getting-started/what-is-ezexchange",
-        "guides/getting-started/why-ezexchange",
+        "guides/getting-started/what-is-exayn",
+        "guides/getting-started/why-exayn",
         "guides/getting-started/general-information",
         "guides/getting-started/resources",
       ],

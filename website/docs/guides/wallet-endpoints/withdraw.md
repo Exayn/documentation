@@ -31,7 +31,7 @@ This endpoint submit a withdraw request.
 ## Request Example
 
 ```bash
-curl -X POST 'https://api.ezexchange-api.com/v1/wallet/withdraw' \
+curl -X POST 'https://api.exayn.com/v1/wallet/withdraw' \
 -H 'X-API-KEY: <PLACE YOUR PUBLIC KEY>' \
 -H 'X-API-EXCHANGE-KEY: <PLACE YOUR EXCHANGE API KEY NAME>' \
 -H 'Content-Type: application/json' \

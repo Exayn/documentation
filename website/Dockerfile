@@ -1,15 +1,18 @@
-FROM node:lts-alpine3.18 as builder
-## Set the working directory to `/opt/docusaurus`.
+FROM node:20-alpine3.18 as build
+
 WORKDIR /opt/docusaurus
-## Copy over the source code.
-COPY . /opt/docusaurus/
-## Install dependencies with `--immutable` to ensure reproducibility.
+
+COPY . ./
+
 RUN npm install
-## Build the static site.
+
 RUN npm run build
 
-FROM caddy:2-alpine as caddy
-## Copy the Caddyfile.
-COPY --from=builder /opt/docusaurus/Caddyfile /etc/caddy/Caddyfile
-## Copy the Docusaurus build output.
-COPY --from=builder /opt/docusaurus/build /var/docusaurus
+FROM nginx:1.25.4-alpine3.18
+
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /opt/docusaurus/build /var/docusaurus
+
+EXPOSE 80
+
+ENTRYPOINT ["nginx","-g","daemon off;"]

@@ -28,7 +28,7 @@ This endpoint returns the recent klines of the symbol used
 ## Request Example
 
 ```bash
-curl -X POST 'https://api.ezexchange-api.com/v1/market/recent-klines&asset1=BTC&asset2=ETH&signature=xxx' \
+curl -X POST 'https://api.exayn.com/v1/market/recent-klines&asset1=BTC&asset2=ETH&signature=xxx' \
 -H 'X-API-KEY: <PLACE YOUR PUBLIC KEY>' \
 -H 'X-API-EXCHANGE-KEY: <PLACE YOUR EXCHANGE API KEY NAME>' \
 -H 'Content-Type: application/json'

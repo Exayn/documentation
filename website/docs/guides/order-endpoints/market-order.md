@@ -29,7 +29,7 @@ This endpoint place a market order on the exchange used.
 ## Request Example
 
 ```bash
-curl -X POST 'https://api.ezexchange-api.com/v1/order/market' \
+curl -X POST 'https://api.exayn.com/v1/order/market' \
 -H 'X-API-KEY: <PLACE YOUR PUBLIC KEY>' \
 -H 'X-API-EXCHANGE-KEY: <PLACE YOUR EXCHANGE API KEY NAME>' \
 -H 'Content-Type: application/json' \

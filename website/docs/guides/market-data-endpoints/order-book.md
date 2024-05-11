@@ -29,7 +29,7 @@ This endpoint returns order book of the symbol passed.
 ## Request Example
 
 ```bash
-curl -X GET 'https://api.ezexchange-api.com/v1/market/order-book?asset1=BTC&asset2=ETH&signature=xxx' \
+curl -X GET 'https://api.exayn.com/v1/market/order-book?asset1=BTC&asset2=ETH&signature=xxx' \
 -H 'X-API-KEY: <PLACE YOUR PUBLIC KEY>' \
 -H 'X-API-EXCHANGE-KEY: <PLACE YOUR EXCHANGE API KEY NAME>' \'
 -H 'Content-Type: application/json'

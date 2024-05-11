@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Sign Requests
 
-EzeXchange.API uses a secure authentication mechanism similar to Binance's SIGNED requests. Each request must be accompanied by a signature generated using your secret API key. This ensures the security and authenticity of every API call.
+Exayn uses a secure authentication mechanism similar to Binance's SIGNED requests. Each request must be accompanied by a signature generated using your secret API key. This ensures the security and authenticity of every API call.
 
 ## Which Requests Need to be Signed?
 
@@ -87,7 +87,7 @@ X-API-KEY: CzDMMq6tnBo7ECyLiCvN4K33N0DiXFW_tMiOq8rfKLc
 #### Final request :
 
 ```bash
-curl -X POST 'https://api.ezexchange-api.com/v1/order/market' \
+curl -X POST 'https://api.exayn.com/v1/order/market' \
 -H 'X-API-KEY: CzDMMq6tnBo7ECyLiCvN4K33N0DiXFW_tMiOq8rfKLc' \
 -H 'X-API-EXCHANGE-KEY: cz-binance-api-key' \
 -H 'Content-Type: application/json' \

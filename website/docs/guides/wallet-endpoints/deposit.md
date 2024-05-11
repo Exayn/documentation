@@ -29,7 +29,7 @@ This endpoint fetch the deposit address of the asset passed.
 ## Request Example
 
 ```bash
-curl -X GET 'https://api.ezexchange-api.com/v1/wallet/deposit?asset=ETH&network=ETH&signature=xxx' \
+curl -X GET 'https://api.exayn.com/v1/wallet/deposit?asset=ETH&network=ETH&signature=xxx' \
 -H 'X-API-KEY: <PLACE YOUR PUBLIC KEY>' \
 -H 'X-API-EXCHANGE-KEY: <PLACE YOUR EXCHANGE API KEY NAME>' \
 -H 'Content-Type: application/json'

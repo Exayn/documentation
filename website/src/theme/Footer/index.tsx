@@ -52,28 +52,28 @@ function Footer() {
           <div className="row footer__links">
             <div className="col col--5 footer__col">
               <div className="margin-bottom--md footer__logo">
-                <img src="/img/logo.svg" alt="EzeXchange" width="75" />
-                <h3>EzeXchange.API</h3>
+                <img src="/img/logo.svg" alt="Exayn" width="75" />
+                <h3>Exayn</h3>
               </div>
               <div className="margin-bottom--md">
                 <p className="footer__description">
-                  EzeXchange is a Developer tool.
+                  Exayn is a Developer tool.
                 </p>
                 <p className="footer__description">
                   Help Developers To Ship Faster.
                 </p>
               </div>
               <div className="footer__description_icons">
-                <a href="https://github.com/EzeXchange-API" target="_blank">
+                <a href="https://github.com/Exayn" target="_blank">
                   <FontAwesomeIcon className="icon" icon={faGithub} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/EzeXchange-API/"
+                  href="https://www.linkedin.com/company/exayn/"
                   target="_blank"
                 >
                   <FontAwesomeIcon className="icon" icon={faLinkedin} />
                 </a>
-                <a href="https://twitter.com/EzeXchange" target="_blank">
+                <a href="https://twitter.com/Exayn" target="_blank">
                   <FontAwesomeIcon className="icon" icon={faTwitter} />
                 </a>
                 <a href="https://discord.gg/qr7BWCP6DH" target="_blank">

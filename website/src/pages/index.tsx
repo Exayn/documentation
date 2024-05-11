@@ -8,12 +8,12 @@ const Cards = [
   {
     icon: faExpand,
     title: "Guides",
-    url: "docs/guides/getting-started/what-is-ezexchange",
+    url: "/docs/guides/getting-started/what-is-exayn",
   },
   {
     icon: faWandMagic,
     title: "Tutorials",
-    url: "docs/tutorials/getting-started",
+    url: "/docs/tutorials/getting-started",
   },
 ];
 

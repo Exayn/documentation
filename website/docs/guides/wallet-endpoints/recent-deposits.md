@@ -26,7 +26,7 @@ This endpoint returns the recent deposits of the account used.
 ## Request Example
 
 ```bash
-curl -X GET 'https://api.ezexchange-api.com/v1/wallet/recent-deposits?signature=xxx' \
+curl -X GET 'https://api.exayn.com/v1/wallet/recent-deposits?signature=xxx' \
 -H 'X-API-KEY: <PLACE YOUR PUBLIC KEY>' \
 -H 'X-API-EXCHANGE-KEY: <PLACE YOUR EXCHANGE API KEY NAME>' \
 -H 'Content-Type: application/json'
